@@ -25,6 +25,10 @@ app.use("/api/v1/post", postRouter)
 app.use("/api/v1/ai",
   aiRouter)
 
+app.get("/", (req, res) => {
+  res.send("Smart Blog API is running...")
+})
+
 
 mongoose
   .connect(MONGO_URI)
