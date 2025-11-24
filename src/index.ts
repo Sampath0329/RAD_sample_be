@@ -25,7 +25,7 @@ app.use("/api/v1/post", postRouter)
 app.use("/api/v1/ai",
   aiRouter)
 
-app.get("/", (req, res) => {
+app.get("/get", (req, res) => {
   res.json({ message: "Smart Blog API is running..." })
 })
 
