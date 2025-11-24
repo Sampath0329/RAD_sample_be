@@ -26,8 +26,9 @@ app.use("/api/v1/ai",
   aiRouter)
 
 app.get("/", (req, res) => {
-  res.send("Smart Blog API is running...")
+  res.json({ message: "Smart Blog API is running..." })
 })
+
 
 
 mongoose
